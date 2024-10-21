@@ -37,6 +37,15 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 17vh;
+  background-color: aliceblue;
+}
+
+nav,
+a,
+.nav-links {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Menjaga navbar tetap di depan elemen lain */
 }
 
 .nav-links {
@@ -338,7 +347,7 @@ section {
   text-align: initial;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 2.5rem;
+  gap: 2rem;
   justify-content: space-around;
 }
 
