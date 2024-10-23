@@ -9,6 +9,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  /* background-color: aliceblue; */
 }
 
 html {
@@ -25,6 +26,10 @@ a,
 .btn {
   transition: all 300ms ease;
 }
+/* 
+svg {
+  display: inline;
+} */
 
 /* DESKTOP NAV */
 
@@ -69,6 +74,7 @@ a:hover {
 
 .logo {
   font-size: 2rem;
+  font-weight: 1000;
 }
 
 .logo:hover {
@@ -163,6 +169,7 @@ section {
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
+  margin-bottom: none;
 }
 
 .section-container {
@@ -203,9 +210,15 @@ section {
   margin-bottom: 1rem;
 }
 
+.name {
+  font-size: 3rem;
+  text-align: center;
+}
+
 .title {
   font-size: 3rem;
   text-align: center;
+  z-index: 1000;
 }
 
 #socials-container {
@@ -218,6 +231,10 @@ section {
 /* ICONS */
 
 .icon {
+  cursor: pointer;
+  height: 4rem;
+}
+.check {
   cursor: pointer;
   height: 2rem;
 }
@@ -327,6 +344,7 @@ section {
 
 #experience {
   position: relative;
+  max-height: 700px;
 }
 
 .experience-sub-title {
@@ -347,7 +365,7 @@ section {
   text-align: initial;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 2rem;
+  gap: 0.5rem;
   justify-content: space-around;
 }
 
@@ -360,6 +378,10 @@ article {
 
 article .icon {
   cursor: default;
+}
+
+article img {
+  display: fixed;
 }
 
 /* PROJECTS SECTION */
@@ -408,6 +430,7 @@ article .icon {
   background: (250, 250, 250);
   margin: 2rem auto;
   padding: 0.5rem;
+  background-color: white;
 }
 
 .contact-info-container {
@@ -430,13 +453,35 @@ article .icon {
   height: 2.5rem;
 }
 
+.linkedin-icon {
+  height: 2.5rem;
+}
 /* FOOTER SECTION */
 
 footer {
   height: 26vh;
   margin: 0 1rem;
+  display: block;
 }
 
 footer p {
   text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .footer-links {
+    display: inline;
+    size: 10px;
+  }
+  .footer-links li {
+    display: inline;
+    font-size: 20px;
+  }
 }
